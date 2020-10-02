@@ -4,7 +4,7 @@
 Screenshots:
 https://www.behance.net/cybdom
 
-Best way to help me is by buying me a coffee:
+Best way to help me is by buying me a coffee:-
 
 https://www.buymeacoffee.com/bi3cp0Zk5
 
