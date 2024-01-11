@@ -36,14 +36,14 @@ class Details extends StatelessWidget {
                           decoration: BoxDecoration(
                             shape: BoxShape.circle,
                             border: Border.all(
-                              color: Colors.grey[700],
+                              color: Colors.grey.shade700,
                             ),
                           ),
                           child: InkWell(
                             onTap: () {},
                             child: Icon(
                               Icons.edit,
-                              color: Colors.grey[600],
+                              color: Colors.grey.shade600,
                             ),
                           ),
                         )
@@ -118,7 +118,11 @@ class Details extends StatelessWidget {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: <Widget>[
                               Text(
-                                f == 0 ? "Repeat" : f==1? "Streak" : "Best",
+                                f == 0
+                                    ? "Repeat"
+                                    : f == 1
+                                        ? "Streak"
+                                        : "Best",
                                 style: TextStyle(
                                   color: Colors.grey[500],
                                   fontSize: 17,
@@ -126,7 +130,11 @@ class Details extends StatelessWidget {
                               ),
                               SizedBox(height: 9),
                               Text(
-                                f == 0 ? "Every Day" : f==1? "8 Days" : "11 Days",
+                                f == 0
+                                    ? "Every Day"
+                                    : f == 1
+                                        ? "8 Days"
+                                        : "11 Days",
                                 style: TextStyle(
                                   fontSize: 19,
                                   fontWeight: FontWeight.bold,

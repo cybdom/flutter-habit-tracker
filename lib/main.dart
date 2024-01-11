@@ -213,7 +213,7 @@ class Home extends StatelessWidget {
                                     : FontWeight.normal,
                                 color: day == DateTime.now().day
                                     ? Colors.white
-                                    : Colors.grey[500],
+                                    : Colors.grey.shade500,
                               ),
                             ),
                             Text(
@@ -253,7 +253,7 @@ class Home extends StatelessWidget {
                     TextSpan(
                       text: " 5",
                       style: TextStyle(
-                        color: Colors.grey[500],
+                        color: Colors.grey.shade500,
                         fontSize: 21,
                       ),
                     ),
@@ -280,7 +280,7 @@ class Home extends StatelessWidget {
 class ListItem extends StatelessWidget {
   final int id;
 
-  const ListItem({Key key, this.id}) : super(key: key);
+  const ListItem({Key? key, required this.id}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return InkWell(
@@ -303,12 +303,12 @@ class ListItem extends StatelessWidget {
                     border: id == 0
                         ? Border()
                         : Border.all(
-                            color: Colors.grey[500],
+                            color: Colors.grey.shade500,
                           ),
                   ),
                   child: Icon(
                     Icons.check,
-                    color: id == 0 ? Colors.white : Colors.grey[500],
+                    color: id == 0 ? Colors.white : Colors.grey.shade500,
                   ),
                 ),
                 SizedBox(width: 15),
@@ -327,7 +327,8 @@ class ListItem extends StatelessWidget {
                     ),
                     Text(
                       habits2[id]['progress'],
-                      style: TextStyle(color: Colors.grey[500], fontSize: 17),
+                      style:
+                          TextStyle(color: Colors.grey.shade500, fontSize: 17),
                     ),
                     SizedBox(
                       height: 15,
